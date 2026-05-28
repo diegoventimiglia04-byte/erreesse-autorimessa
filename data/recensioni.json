@@ -1,0 +1,24 @@
+{
+  "lista": [
+    {
+      "nome": "Livio Farello",
+      "testo": "Utilizzo l'autorimessa di Via Vespucci da anni per il parcheggio mensile. Struttura pulita, sicura e il personale è sempre disponibile. Il lavaggio a mano è eccellente, la mia auto esce come nuova. Consiglio vivamente a chiunque cerchi un parcheggio coperto in zona Crocetta!",
+      "zona": "Cliente abituale – Zona Crocetta, Torino"
+    },
+    {
+      "nome": "Rick Francesi",
+      "testo": "Finalmente un'autorimessa a Torino che offre tutto: parcheggio coperto, cambio gomme e pure l'officina. La sede di Via Cavallermaggiore in zona Cenisia è comodissima. Personale super professionale e prezzi onesti e trasparenti. Non potrei chiedere di meglio!",
+      "zona": "Cliente abituale – Zona Cenisia, Torino"
+    },
+    {
+      "nome": "Maurizio Miroglio",
+      "testo": "Ho l'abbonamento mensile da 3 anni. L'accesso H24 è fondamentale per me che lavoro su turni. Non cambierei per nessun motivo! Il check-up elettronico mi ha persino salvato da un guasto che non avevo ancora notato. Professionisti veri, grazie Erreesse Parcheggi!",
+      "zona": "Abbonato mensile – Via Belluno, Torino"
+    },
+    {
+      "nome": "Vincenzo Gatta",
+      "testo": "Cercare parcheggio sicuro a Torino era un incubo prima di scoprire Erreesse Parcheggi. Adesso parcheggio in zona San Donato senza stress e senza preoccupazioni. Personale gentile, struttura sempre curata. Servizio impeccabile dal 1998!",
+      "zona": "Cliente soddisfatto – San Donato, Torino"
+    }
+  ]
+}

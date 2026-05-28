@@ -1,0 +1,22 @@
+{
+  "parcheggio": {
+    "titolo": "Parcheggio Coperto H24",
+    "testo": "Autorimessa coperta e sorvegliata per auto, moto e furgoni a Torino. Con l'abbonamento mensile hai accesso 24 ore su 24, 7 giorni su 7. La soluzione ideale per chi vive o lavora in zona Crocetta, Cenisia e San Donato: parcheggio sicuro senza pensieri.",
+    "immagine": "Immagine 3.jpg"
+  },
+  "lavaggio": {
+    "titolo": "Lavaggio Auto a Mano",
+    "testo": "Lavaggio professionale a mano disponibile presso la sede di Via Vespucci in zona Crocetta, Torino. Trattamento delicato e accurato per ogni tipo di vettura: dalla city car al SUV. Un servizio meticoloso che valorizza la tua auto come merita.",
+    "immagine": "Immagine 1.jpg"
+  },
+  "officina": {
+    "titolo": "Officina Meccanica",
+    "testo": "Il nostro team di meccanici esperti si occupa della manutenzione ordinaria e straordinaria della tua vettura. Check-up elettronico, diagnosi computerizzata, interventi su freni, batterie, spie e tagliandi. La tua auto è in mani sicure a Torino.",
+    "immagine": "Immagine 5.jpg"
+  },
+  "gommista": {
+    "titolo": "Gommista Torino",
+    "testo": "Servizio professionale di gommista nel cuore di Torino. Cambio gomme stagionale, montaggio, riparazione foratura e sostituzione pneumatici per auto, SUV e furgoni. Siamo il punto di riferimento per le gomme a Torino in zona Crocetta e Cenisia.",
+    "immagine": "Immagine 2.jpg"
+  }
+}

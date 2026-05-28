@@ -1,0 +1,124 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Lingua interfaccia CMS
+locale: it
+
+# Cartella dove vengono caricate le nuove immagini dal CMS
+media_folder: uploads
+public_folder: /uploads
+
+# Nasconde il pulsante "Nuovo" per le file collections
+# (i file esistono già, non serve crearne di nuovi)
+
+collections:
+
+  # ── PREZZI ──────────────────────────────────────────────────────────────────
+  - name: dati
+    label: "Contenuti Sito"
+    files:
+
+      - name: prezzi
+        label: "💶 Prezzi"
+        file: data/prezzi.json
+        format: json
+        fields:
+
+          - label: "Parcheggio Coperto"
+            name: parcheggio
+            widget: object
+            fields:
+              - label: "Auto – tariffa oraria (tutte le sedi)"
+                name: auto_oraria
+                widget: string
+                hint: "Es: €2/ora"
+              - label: "Auto – tariffa 24h  (Crocetta & Cenisia)"
+                name: auto_std_24h
+                widget: string
+                hint: "Es: €25"
+              - label: "Auto – tariffa 24h  (Via Belluno)"
+                name: auto_bel_24h
+                widget: string
+                hint: "Es: €20"
+              - label: "Furgone – tariffa oraria"
+                name: furgone_oraria
+                widget: string
+                hint: "Es: €5/ora"
+              - label: "Furgone – tariffa 24h"
+                name: furgone_24h
+                widget: string
+                hint: "Es: €35"
+
+          - label: "Lavaggio Auto a Mano"
+            name: lavaggio
+            widget: object
+            fields:
+              - { label: "Auto Piccola",       name: piccola,    widget: string, hint: "Es: €20" }
+              - { label: "Auto Media",          name: media,      widget: string, hint: "Es: €25" }
+              - { label: "Auto Grande",         name: grande,     widget: string, hint: "Es: €30" }
+              - { label: "SUV",                 name: suv,        widget: string, hint: "Es: €35" }
+              - { label: "Aspirazione extra",   name: aspirazione, widget: string, hint: "Es: +€5" }
+
+          - label: "Gommista & Officina"
+            name: gommista
+            widget: object
+            fields:
+              - { label: "Cambio gomme con cerchio",        name: cambio_cerchio,  widget: string, hint: "Es: €25" }
+              - { label: "Sanificazione Aria Condizionata", name: sanificazione_ac, widget: string, hint: "Es: €20" }
+
+      # ── RECENSIONI ────────────────────────────────────────────────────────────
+      - name: recensioni
+        label: "⭐ Recensioni"
+        file: data/recensioni.json
+        format: json
+        fields:
+          - label: "Recensioni clienti"
+            name: lista
+            widget: list
+            max: 4
+            min: 1
+            summary: "{{fields.nome}}"
+            fields:
+              - { label: "Nome cliente",        name: nome,  widget: string }
+              - { label: "Testo recensione",    name: testo, widget: text }
+              - { label: "Zona / Descrizione",  name: zona,  widget: string, hint: "Es: Cliente abituale – Zona Crocetta, Torino" }
+
+      # ── SERVIZI ───────────────────────────────────────────────────────────────
+      - name: servizi
+        label: "🔧 Servizi"
+        file: data/servizi.json
+        format: json
+        fields:
+
+          - label: "Parcheggio Coperto H24"
+            name: parcheggio
+            widget: object
+            fields:
+              - { label: "Titolo card",    name: titolo,    widget: string }
+              - { label: "Descrizione",    name: testo,     widget: text }
+              - { label: "Foto",           name: immagine,  widget: image, required: false, hint: "Lascia vuoto per usare la foto attuale" }
+
+          - label: "Lavaggio Auto a Mano"
+            name: lavaggio
+            widget: object
+            fields:
+              - { label: "Titolo card",    name: titolo,    widget: string }
+              - { label: "Descrizione",    name: testo,     widget: text }
+              - { label: "Foto",           name: immagine,  widget: image, required: false }
+
+          - label: "Officina Meccanica"
+            name: officina
+            widget: object
+            fields:
+              - { label: "Titolo card",    name: titolo,    widget: string }
+              - { label: "Descrizione",    name: testo,     widget: text }
+              - { label: "Foto",           name: immagine,  widget: image, required: false }
+
+          - label: "Gommista"
+            name: gommista
+            widget: object
+            fields:
+              - { label: "Titolo card",    name: titolo,    widget: string }
+              - { label: "Descrizione",    name: testo,     widget: text }
+              - { label: "Foto",           name: immagine,  widget: image, required: false }

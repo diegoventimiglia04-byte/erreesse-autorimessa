@@ -1,0 +1,20 @@
+{
+  "parcheggio": {
+    "auto_oraria": "€2/ora",
+    "auto_std_24h": "€25",
+    "auto_bel_24h": "€20",
+    "furgone_oraria": "€5/ora",
+    "furgone_24h": "€35"
+  },
+  "lavaggio": {
+    "piccola": "€20",
+    "media": "€25",
+    "grande": "€30",
+    "suv": "€35",
+    "aspirazione": "+€5"
+  },
+  "gommista": {
+    "cambio_cerchio": "€25",
+    "sanificazione_ac": "€20"
+  }
+}
