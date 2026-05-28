@@ -1,12 +1,6 @@
-# Netlify build & redirect config
+# Netlify build config
 [build]
   publish = "."
-
-# Redirect per la pagina admin (cartella con index.html)
-[[redirects]]
-  from  = "/admin"
-  to    = "/admin/index.html"
-  status = 200
 
 # Header di sicurezza per il pannello admin
 [[headers]]
